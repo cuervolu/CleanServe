@@ -1,0 +1,34 @@
+﻿@{
+    ViewBag.Title = "Servicios";
+}
+
+<div class="container my-5">
+
+
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr class="table-primary">
+                <th>ID calificación</th>
+                <th>Nivel de calificación</th>
+                <th>Comentario</th>
+                <th>ID servicio</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in ViewBag.Calificaciones)
+            {
+                <tr>
+                    <td>@item.ID_calificacion</td>
+                    <td>
+                        @for (int i = 0; i < item.nivel_de_calificacion; i++)
+                        {
+                            <span class="text-warning">&#9733;</span>
+                        }
+                    </td>
+                    <td>@item.comentario</td>
+                    <td>@item.ID_servicio</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,13 @@
+﻿html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+body {
+    font-family: Roboto, sans-serif !important;
+    background-color: #fffaf5 !important;
+}
+
+

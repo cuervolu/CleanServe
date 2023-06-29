@@ -1,0 +1,9 @@
+﻿.card {
+    height: 100% !important;
+}
+
+.custom-img {
+    height: 200px !important;
+    object-fit: contain !important;
+    width: 100% !important;
+}

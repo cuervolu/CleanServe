@@ -1,0 +1,88 @@
+﻿@{
+    ViewBag.Title = "Inicio";
+}
+
+@section Styles {
+    <link href="~/Content/Index.css" rel="stylesheet" type="text/css" />
+}
+
+<!--Hero-->
+<div class="overflow-hidden">
+    <div class="container-fluid col-xxl-8">
+        <div class="row flex-lg-nowrap align-items-center g-5">
+            <div class="order-lg-1 w-100">
+                <img style="clip-path: polygon(25% 0%, 100% 0%, 100% 99%, 0% 100%);" src="https://images.unsplash.com/photo-1669101602124-f5b78895d91c?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1170&amp;q=80" class="d-block mx-lg-auto img-fluid" alt="Photo by Milad Fakurian" loading="lazy" srcset="https://images.unsplash.com/photo-1669101602124-f5b78895d91c?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1170&amp;q=80 1170w, https://images.unsplash.com/photo-1669101602124-f5b78895d91c?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=150&amp;q=80 150w, https://images.unsplash.com/photo-1669101602124-f5b78895d91c?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=300&amp;q=80 300w, https://images.unsplash.com/photo-1669101602124-f5b78895d91c?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=768&amp;q=80 768w, https://images.unsplash.com/photo-1669101602124-f5b78895d91c?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1024&amp;q=80 1024w" sizes="(max-width: 1170px) 100vw, 1170px" width="2340" height="829">
+            </div>
+            <div class="col-lg-6 col-xl-5 text-center text-lg-start pt-lg-5 mt-xl-4">
+                <div class="lc-block mb-4">
+                    <div editable="rich">
+                        <h1 class="fw-bold display-3">¡Limpieza impecable para un ambiente perfecto!</h1>
+                    </div>
+                </div>
+
+                <div class="lc-block mb-5">
+                    <div editable="rich">
+                        <p class="rfs-8">Tu aliado confiable para soluciones de limpieza y servicios impecables.</p>
+                    </div>
+                </div>
+
+                <div class="lc-block mb-6">
+                    <a class="btn btn-primary px-4 me-md-2 btn-lg" href="@Url.Action("Productos")" role="button">Ve Nuestros Productos</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Owl Carousel-->
+<section class="container my-5 owl-carousel owl-theme owl-loaded">
+    @foreach (var producto in ViewBag.Productos)
+    {
+        <div class="card h-100 custom-card">
+            <img src="@producto.imagen" class="card-img-top" alt="@producto.nombre">
+            <div class="card-body">
+                <h5 class="card-title">@producto.nombre</h5>
+                <p class="card-text">@producto.presentacion</p>
+                <a href="@Url.Action("DetalleProducto", new { id = producto.ID_producto })" class="btn btn-primary text-center">Ver detalles</a>
+            </div>
+        </div>
+    }
+</section>
+
+@section Scripts{
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                nav: true,
+                navText: ["<div class='nav-button owl-prev d-none d-md-none d-lg-block'><i class='fa-solid fa-chevron-left'></i></div>", "<div class='nav-button owl-next d-none d-md-none d-lg-block'><i class='fa-solid fa-chevron-right'></i></div>"],
+                stagePadding: 0,
+                loop: true,
+                dots: false,
+                margin: 5,
+                responsiveClass: true,
+                items: 5,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                    },
+                    580: {
+                        items: 2, // Cambiar de 3 a 2
+                    },
+                    780: {
+                        items: 3, // Cambiar de 3 a 2
+                    },
+                    1000: {
+                        items: 4, // Cambiar de 3 a 2
+                    },
+                    1200: {
+                        items: 5,
+                    }
+                }
+            });
+        });
+        ;
+    </script>
+}

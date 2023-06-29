@@ -1,0 +1,26 @@
+﻿@model DataAccess.Models.Producto
+
+@{
+    ViewBag.Title = Model.nombre;
+}
+
+<div class="container my-5">
+    <div class="card p-5">
+        <div class="row g-0">
+            <div class="col-md-6">
+                <img class="card-img-top" src="@Model.imagen" alt="@Model.nombre">
+            </div>
+            <div class="col-md-6">
+                <div class="card-body">
+                    <h1 class="card-title">@Model.nombre</h1>
+                    @*<h3 class="card-subtitle mb-2 text-muted">$@Model.Precio</h3>*@
+                    <p class="card-text">@Model.presentacion</p>
+                    <div class="d-grid gap-2">
+                        <a href="#" class="btn btn-primary btn-lg">Comprar</a>
+                    </div>
+                    @*<p class="card-text mt-3"><strong>Stock:</strong> @Model.Cantidad</p>*@
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

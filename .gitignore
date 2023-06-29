@@ -1,0 +1,44 @@
+# Carpeta .vs/
+.vs/
+
+
+# Carpeta obj/
+DataAccess/obj/
+DataAccess/bin/
+web_CleanServe/obj/
+web_CleanServe/bin/
+
+# Carpeta packages/
+packages/
+
+
+# Archivo CleanServe.sln
+CleanServe.sln
+
+
+
+# Archivos de compilación
+web_CleanServe/*.dll
+web_CleanServe/*.exe
+web_CleanServe/*.pdb
+
+# Archivos generados por Entity Framework
+web_CleanServe/Migrations/
+
+# Archivos de paquetes NuGet
+web_CleanServe/packages/
+
+# Archivos temporales de compilación
+web_CleanServe/[Bb]in/
+web_CleanServe/[Oo]bj/
+
+# Otros archivos generados
+web_CleanServe/*.suo
+web_CleanServe/*.user
+web_CleanServe/*.bak
+web_CleanServe/*.Cache
+web_CleanServe/*.tmp
+web_CleanServe/*.log
+web_CleanServe/*.vspscc
+web_CleanServe/*.vssscc
+web_CleanServe/*.generated.cs

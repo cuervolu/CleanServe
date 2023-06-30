@@ -43,10 +43,10 @@
                             <a class="nav-link  @(Request.Url.AbsolutePath == "/" ? "active" : "")" aria-current="page" href="/">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link @(Request.Url.AbsolutePath == "/Productos" ? "active" : "")" href="@Url.Action("Productos")">Productos</a>
+                            <a class="nav-link @(Request.Url.AbsolutePath == "/Home/Productos" ? "active" : "")" href="@Url.Action("Productos")">Productos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link @(Request.Url.AbsolutePath == "/Servicios" ? "active" : "")" href="@Url.Action("Servicios")">Servicios</a>
+                            <a class="nav-link @(Request.Url.AbsolutePath == "/Home/Servicios" ? "active" : "")" href="@Url.Action("Servicios")">Servicios</a>
                         </li>
                     </ul>
                 </div>

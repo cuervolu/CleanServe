@@ -27,7 +27,7 @@
                 </div>
 
                 <div class="lc-block mb-6">
-                    <a class="btn btn-primary px-4 me-md-2 btn-lg" href="@Url.Action("Productos")" role="button">Ve Nuestros Productos</a>
+                    <a class="btn bg-brand text-white px-4 me-md-2 btn-lg" href="@Url.Action("Productos")" role="button">Ve Nuestros Productos</a>
                 </div>
             </div>
         </div>
@@ -43,7 +43,7 @@
             <div class="card-body">
                 <h5 class="card-title">@producto.nombre</h5>
                 <p class="card-text">@producto.presentacion</p>
-                <a href="@Url.Action("DetalleProducto", new { id = producto.ID_producto })" class="btn btn-primary text-center">Ver detalles</a>
+                <a href="@Url.Action("DetalleProducto", new { id = producto.ID_producto })" class="btn bg-brand text-white text-center">Ver detalles</a>
             </div>
         </div>
     }

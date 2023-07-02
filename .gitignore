@@ -42,3 +42,5 @@ web_CleanServe/*.log
 web_CleanServe/*.vspscc
 web_CleanServe/*.vssscc
 web_CleanServe/*.generated.cs
+
+DataAccess/Models/*

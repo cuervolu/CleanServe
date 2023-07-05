@@ -9,13 +9,6 @@ namespace app_CleanServ.Controllers
 {
     public class InicioController
     {
-        //private readonly InicioForm inicioForm;
-
-        //public InicioController()
-        //{
-        //    inicioForm = new InicioForm();
-        //    inicioForm.SetC
-        //}
         public List<ChartData> GetTotalRequestsByMonth()
         {
             try

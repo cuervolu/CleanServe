@@ -9,7 +9,27 @@ namespace app_CleanServ
         public MainForm()
         {
             InitializeComponent();
+            LoadForms(new InicioForm());
+        }
 
+
+        public void LoadForms(object form)
+        {
+            //Limpiar panel
+            this.containerPanel.Controls.Clear();
+            //Transformo el objeto como form
+            Form f = form as Form;
+
+            //Ordenar la jerarquía y orden de los formlarios
+
+            f.TopLevel = false;
+            f.Dock = DockStyle.Fill;
+
+            //Cargamos el formulario en el panel
+
+            this.containerPanel.Controls.Add(f);
+            this.containerPanel.Tag = f;
+            f.Show();
         }
 
         private void btnMain_Click(object sender, System.EventArgs e)
@@ -38,23 +58,5 @@ namespace app_CleanServ
         }
 
 
-        public void LoadForms(object form)
-        {
-            //Limpiar el panel
-            this.panel1.Controls.Clear();
-
-            //Transformar el objeto como Form
-            Form f = form as Form;
-
-            //Ordenar la jerarquía de los forms.
-            f.TopLevel = false;
-
-            f.Dock = DockStyle.Fill;
-
-            //Cargar el form
-            this.panel1.Controls.Add(f);
-            this.panel1.Tag = f;
-            f.Show();
-        }
     }
 }

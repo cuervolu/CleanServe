@@ -37,28 +37,31 @@
             // 
             // chartSales
             // 
+            this.chartSales.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(250)))), ((int)(((byte)(245)))));
+            this.chartSales.BorderlineColor = System.Drawing.Color.Black;
+            this.chartSales.BorderlineWidth = 5;
             chartArea1.Name = "ChartArea1";
             this.chartSales.ChartAreas.Add(chartArea1);
-            this.chartSales.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.chartSales.Cursor = System.Windows.Forms.Cursors.Default;
+            this.chartSales.Dock = System.Windows.Forms.DockStyle.Bottom;
             legend1.Name = "Legend1";
             this.chartSales.Legends.Add(legend1);
-            this.chartSales.Location = new System.Drawing.Point(0, 0);
+            this.chartSales.Location = new System.Drawing.Point(0, 141);
             this.chartSales.Name = "chartSales";
             series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
             series1.Legend = "Legend1";
-            series1.Name = "Month";
+            series1.Name = "Series1";
             this.chartSales.Series.Add(series1);
-            this.chartSales.Size = new System.Drawing.Size(654, 516);
+            this.chartSales.Size = new System.Drawing.Size(776, 381);
             this.chartSales.TabIndex = 0;
-            this.chartSales.Text = "chart1";
+            this.chartSales.Text = "chartSales";
             // 
             // InicioForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(250)))), ((int)(((byte)(245)))));
-            this.ClientSize = new System.Drawing.Size(654, 516);
+            this.ClientSize = new System.Drawing.Size(776, 522);
             this.ControlBox = false;
             this.Controls.Add(this.chartSales);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

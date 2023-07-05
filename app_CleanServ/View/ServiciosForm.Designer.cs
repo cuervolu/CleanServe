@@ -36,10 +36,11 @@
             // 
             // lblServicios
             // 
+            this.lblServicios.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblServicios.AutoSize = true;
             this.lblServicios.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.lblServicios.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.lblServicios.Location = new System.Drawing.Point(310, 24);
+            this.lblServicios.Location = new System.Drawing.Point(331, 23);
             this.lblServicios.Name = "lblServicios";
             this.lblServicios.Size = new System.Drawing.Size(88, 25);
             this.lblServicios.Style = MetroFramework.MetroColorStyle.Black;
@@ -52,7 +53,7 @@
             this.dgvServicios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvServicios.Location = new System.Drawing.Point(12, 70);
             this.dgvServicios.Name = "dgvServicios";
-            this.dgvServicios.Size = new System.Drawing.Size(736, 409);
+            this.dgvServicios.Size = new System.Drawing.Size(755, 631);
             this.dgvServicios.TabIndex = 1;
             // 
             // metroProgressSpinner1
@@ -69,7 +70,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(250)))), ((int)(((byte)(245)))));
-            this.ClientSize = new System.Drawing.Size(760, 483);
+            this.ClientSize = new System.Drawing.Size(782, 739);
             this.Controls.Add(this.metroProgressSpinner1);
             this.Controls.Add(this.dgvServicios);
             this.Controls.Add(this.lblServicios);

@@ -1,5 +1,6 @@
 ﻿using app_CleanServ.Controllers;
 using DataAccess.Models;
+using MetroFramework;
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
@@ -9,6 +10,7 @@ namespace app_CleanServ.View
     public partial class ServiciosForm : Form
     {
         private readonly ServiciosController serviciosController;
+
         public ServiciosForm()
         {
             InitializeComponent();
@@ -55,6 +57,13 @@ namespace app_CleanServ.View
             MostrarCarga(); // Mostrar icono de carga
             dgvServicios.Visible = false;
 
+            CargarServicios();
+
+            OcultarCarga(); // Ocultar icono de carga
+        }
+
+        private void CargarServicios()
+        {
             List<Servicio> servicios = serviciosController.getServicios();
 
             if (servicios != null)
@@ -87,6 +96,7 @@ namespace app_CleanServ.View
                 modificarButtonColumn.Text = "Modificar";
                 modificarButtonColumn.UseColumnTextForButtonValue = true;
                 dgvServicios.Columns.Add(modificarButtonColumn);
+                dgvServicios.CellContentClick += dgvServicios_CellContentClick;
                 dgvServicios.Visible = true;
 
                 // Agregar las filas con los valores de los servicios
@@ -110,11 +120,55 @@ namespace app_CleanServ.View
                 }
 
                 // Mostrar el DataGridView
+                dgvServicios.ReadOnly = true;
                 dgvServicios.Visible = true;
             }
-
-            OcultarCarga(); // Ocultar icono de carga
         }
+
+        private void dgvServicios_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            // Verificar si se hizo clic en el botón de eliminar
+            if (e.ColumnIndex == dgvServicios.Columns["Eliminar"].Index && e.RowIndex >= 0)
+            {
+                // Mostrar mensaje de confirmación
+                DialogResult result = MetroMessageBox.Show(this, "¿Estás seguro de eliminar este servicio?", "Confirmar eliminación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (result == DialogResult.Yes)
+                {
+                    // Obtener el ID del servicio de la fila seleccionada
+                    int ID_servicio = Convert.ToInt32(dgvServicios.Rows[e.RowIndex].Cells["ID_servicio"].Value);
+
+                    // Llamar al método removeServicio del controlador para eliminar el servicio
+                    serviciosController.removeServicio(ID_servicio);
+
+                    // Volver a cargar los servicios en el DataGridView
+                    CargarServicios();
+                }
+            }
+            // Verificar si se hizo clic en el botón de modificar
+            else if (e.ColumnIndex == dgvServicios.Columns["Modificar"].Index && e.RowIndex >= 0)
+            {
+                // Obtener el ID del servicio de la fila seleccionada
+                int ID_servicio = Convert.ToInt32(dgvServicios.Rows[e.RowIndex].Cells["ID_servicio"].Value);
+
+                // Obtener el servicio correspondiente al ID_servicio
+                Servicio servicio = serviciosController.getServicio(ID_servicio);
+
+                // Verificar si el servicio existe
+                if (servicio != null)
+                {
+                    // Crear un formulario de modificación
+                    ModificarServicioForm modificarForm = new ModificarServicioForm(servicio);
+
+                    // Mostrar el formulario de modificación
+                    modificarForm.ShowDialog();
+
+                    // Volver a cargar los servicios en el DataGridView
+                    CargarServicios();
+                }
+            }
+        }
+
 
     }
 }

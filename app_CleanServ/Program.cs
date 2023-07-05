@@ -1,19 +1,22 @@
-﻿using System;
+﻿using app_CleanServ.View;
+using System;
 using System.Windows.Forms;
 
 namespace app_CleanServ
 {
-    internal static class Program
+    static class Program
     {
-        /// <summary>
-        /// Punto de entrada principal para la aplicación.
-        /// </summary>
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm());
+
+            LoginForm loginForm = new LoginForm();
+            if (loginForm.ShowDialog() == DialogResult.OK)
+            {
+                Application.Run(new MainForm());
+            }
         }
     }
 }

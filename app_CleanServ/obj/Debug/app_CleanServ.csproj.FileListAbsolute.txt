@@ -22,3 +22,9 @@ D:\Duoc\Asignaturas\Quinto Semestre\Programación en C# I\Examen\web_CleanServe\
 D:\Duoc\Asignaturas\Quinto Semestre\Programación en C# I\Examen\web_CleanServe\app_CleanServ\obj\Debug\app_CleanServ.MainForm.resources
 D:\Duoc\Asignaturas\Quinto Semestre\Programación en C# I\Examen\web_CleanServe\app_CleanServ\obj\Debug\app_CleanServ.View.InicioForm.resources
 D:\Duoc\Asignaturas\Quinto Semestre\Programación en C# I\Examen\web_CleanServe\app_CleanServ\obj\Debug\app_CleanServ.View.ServiciosForm.resources
+D:\Duoc\Asignaturas\Quinto Semestre\Programación en C# I\Examen\web_CleanServe\app_CleanServ\obj\Debug\app_CleanServ.View.ModificarServicioForm.resources
+D:\Duoc\Asignaturas\Quinto Semestre\Programación en C# I\Examen\web_CleanServe\app_CleanServ\obj\Debug\app_CleanServ.View.CrearUsuarioForm.resources
+D:\Duoc\Asignaturas\Quinto Semestre\Programación en C# I\Examen\web_CleanServe\app_CleanServ\obj\Debug\app_CleanServ.View.LoginForm.resources
+D:\Duoc\Asignaturas\Quinto Semestre\Programación en C# I\Examen\web_CleanServe\app_CleanServ\obj\Debug\app_CleanServ.View.UsuarioForm.resources
+D:\Duoc\Asignaturas\Quinto Semestre\Programación en C# I\Examen\web_CleanServe\app_CleanServ\bin\Debug\PasswordEncryptor.dll
+D:\Duoc\Asignaturas\Quinto Semestre\Programación en C# I\Examen\web_CleanServe\app_CleanServ\bin\Debug\PasswordEncryptor.pdb

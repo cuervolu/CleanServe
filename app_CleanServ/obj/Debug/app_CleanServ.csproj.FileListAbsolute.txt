@@ -10,10 +10,14 @@ D:\Duoc\Asignaturas\Quinto Semestre\Programación en C# I\Examen\web_CleanServe\
 D:\Duoc\Asignaturas\Quinto Semestre\Programación en C# I\Examen\web_CleanServe\app_CleanServ\bin\Debug\EntityFramework.SqlServer.xml
 D:\Duoc\Asignaturas\Quinto Semestre\Programación en C# I\Examen\web_CleanServe\app_CleanServ\obj\Debug\app_CleanServ.csproj.AssemblyReference.cache
 D:\Duoc\Asignaturas\Quinto Semestre\Programación en C# I\Examen\web_CleanServe\app_CleanServ\obj\Debug\app_CleanServ.csproj.SuggestedBindingRedirects.cache
-D:\Duoc\Asignaturas\Quinto Semestre\Programación en C# I\Examen\web_CleanServe\app_CleanServ\obj\Debug\app_CleanServ.Form1.resources
 D:\Duoc\Asignaturas\Quinto Semestre\Programación en C# I\Examen\web_CleanServe\app_CleanServ\obj\Debug\app_CleanServ.Properties.Resources.resources
 D:\Duoc\Asignaturas\Quinto Semestre\Programación en C# I\Examen\web_CleanServe\app_CleanServ\obj\Debug\app_CleanServ.csproj.GenerateResource.cache
 D:\Duoc\Asignaturas\Quinto Semestre\Programación en C# I\Examen\web_CleanServe\app_CleanServ\obj\Debug\app_CleanServ.csproj.CoreCompileInputs.cache
 D:\Duoc\Asignaturas\Quinto Semestre\Programación en C# I\Examen\web_CleanServe\app_CleanServ\obj\Debug\app_CleanServ.csproj.CopyComplete
 D:\Duoc\Asignaturas\Quinto Semestre\Programación en C# I\Examen\web_CleanServe\app_CleanServ\obj\Debug\app_CleanServ.exe
 D:\Duoc\Asignaturas\Quinto Semestre\Programación en C# I\Examen\web_CleanServe\app_CleanServ\obj\Debug\app_CleanServ.pdb
+D:\Duoc\Asignaturas\Quinto Semestre\Programación en C# I\Examen\web_CleanServe\app_CleanServ\bin\Debug\MetroFramework.Design.dll
+D:\Duoc\Asignaturas\Quinto Semestre\Programación en C# I\Examen\web_CleanServe\app_CleanServ\bin\Debug\MetroFramework.dll
+D:\Duoc\Asignaturas\Quinto Semestre\Programación en C# I\Examen\web_CleanServe\app_CleanServ\bin\Debug\MetroFramework.Fonts.dll
+D:\Duoc\Asignaturas\Quinto Semestre\Programación en C# I\Examen\web_CleanServe\app_CleanServ\obj\Debug\app_CleanServ.MainForm.resources
+D:\Duoc\Asignaturas\Quinto Semestre\Programación en C# I\Examen\web_CleanServe\app_CleanServ\obj\Debug\app_CleanServ.View.InicioForm.resources

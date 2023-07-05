@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace app_CleanServ
+namespace app_CleanServ.View
 {
-    public partial class Main : Form
+    public partial class LogoutForm : Form
     {
-        public Main()
+        public LogoutForm()
         {
             InitializeComponent();
         }

@@ -1,6 +1,6 @@
-﻿namespace app_CleanServ
+﻿namespace app_CleanServ.View
 {
-    partial class Main
+    partial class ClientesForms
     {
         /// <summary>
         /// Required designer variable.
@@ -28,17 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // Main
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(840, 519);
-            this.Name = "Main";
-            this.Text = "Main";
-            this.ResumeLayout(false);
-
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Text = "ClientesForms";
         }
 
         #endregion

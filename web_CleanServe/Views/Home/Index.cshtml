@@ -49,12 +49,88 @@
     }
 </section>
 
+<!-- Sección "Sobre Nosotros" -->
+<section class="container-fluid py-5 bg-brand text-white">
+    <div class="container">
+        <div class="row d-flex justify-content-between">
+            <div class="col-lg-7 col-xl-6 text-center text-lg-start">
+                <div class="lc-block mb-4">
+                    <h2 class="fw-bold">Sobre Nosotros</h2>
+                </div>
+                <div class="lc-block mb-5">
+                    <p>Tu satisfacción es nuestra prioridad. En CleanServe, nos especializamos en brindar servicios de limpieza de alta calidad para satisfacer las necesidades de nuestros clientes. Contamos con un equipo profesional y comprometido que se encarga de garantizar un ambiente impecable y saludable para ti y tus seres queridos.</p>
+                    <p>Valoramos la confianza que depositas en nosotros y nos esforzamos por superar tus expectativas en cada tarea de limpieza que realizamos. Ya sea que necesites nuestros servicios para tu hogar o tu negocio, estamos aquí para ayudarte a mantener un entorno limpio y acogedor.</p>
+                </div>
+            </div>
+            <div class="col-lg-5 col-xl-6 d-flex justify-content-center">
+                <img src="~/Images/Servicio-de-aseo-en-Santiago.jpg" class="img-fluid w-50 object-fit-contain" alt="Imagen Sobre Nosotros">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección "Proveedores" -->
+<section class="container my-5">
+    <h2 class="text-center mb-4">Nuestros Proveedores</h2>
+    <div class="row">
+        @foreach (var proveedor in ViewBag.Proveedor)
+        {
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://i0.wp.com/telencargos.com/wp-content/uploads/2020/10/Que-necesito-para-abrir-una-empresa-de-limpieza.png" class="card-img-top m-3 w-50 mx-auto" alt="Proveedor 1">
+                    <div class="card-body">
+                        <h5 class="card-title">@proveedor.razon_social</h5>
+                        <p class="card-text">RUC: @proveedor.RUC</p>
+                        <p>Email: <a href="#" class="">@proveedor.email</a></p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</section>
+
+<section class="container-fluid py-5 bg-brand text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-xl-5 text-center text-lg-start">
+                <div class="lc-block mb-4">
+                    <h2 class="fw-bold">Contáctanos</h2>
+                </div>
+                <div class="lc-block mb-5">
+                    <p>Estamos listos para ayudarte. Si tienes alguna pregunta, consulta o deseas contratar nuestros servicios, no dudes en contactarnos. Nuestro amable equipo de atención al cliente estará encantado de asistirte.</p>
+                </div>
+                <div class="lc-block mb-6">
+                    <p><strong>Teléfono:</strong> +56 9 3211 2223</p>
+                    <p><strong>Correo electrónico:</strong> info@cleanserve.com</p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-xl-7">
+                <form>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-brand text-white border-white">Enviar mensaje</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
 @section Scripts{
     <script>
         $(document).ready(function () {
             $(".owl-carousel").owlCarousel({
                 nav: true,
-                navText: ["<div class='nav-button owl-prev d-none d-md-none d-lg-block'><i class='fa-solid fa-chevron-left'></i></div>", "<div class='nav-button owl-next d-none d-md-none d-lg-block'><i class='fa-solid fa-chevron-right'></i></div>"],
+                navText: ["<div class='nav-button owl-prev d-none d-md-none d-lg-block bg-brand'><i class='fa-solid fa-chevron-left'></i></div>", "<div class='nav-button owl-next d-none d-md-none d-lg-block bg-brand'><i class='fa-solid fa-chevron-right'></i></div>"],
                 stagePadding: 0,
                 loop: true,
                 dots: false,

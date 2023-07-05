@@ -22,10 +22,17 @@
                     <td>
                         @for (int i = 0; i < item.nivel_de_calificacion; i++)
                         {
-                            <span class="text-warning">&#9733;</span> 
+                            <span class="text-warning">&#9733;</span>
                         }
                     </td>
-                    <td>@item.comentario</td>
+                    @if (string.IsNullOrEmpty(item.comentario))
+                    {
+                        <td>Sin Comentario</td>
+                    }
+                    else
+                    {
+                        <td>@item.comentario</td>
+                    }
                     <td>@item.ID_servicio</td>
                 </tr>
             }

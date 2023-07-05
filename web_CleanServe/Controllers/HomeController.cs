@@ -14,6 +14,7 @@ namespace web_CleanServe.Controllers
             using (var dbContext = new SERVICIO_LIMPIEZAEntities())
             {
                 ViewBag.Productos = dbContext.Producto.Take(20).ToList(); //solo los 20 primeros
+                ViewBag.Proveedor = dbContext.Proveedor.Take(3).ToList(); //solo los 3 primeros
                 return View();
             }
         }
@@ -53,7 +54,9 @@ namespace web_CleanServe.Controllers
         {
             using (var dbContext = new SERVICIO_LIMPIEZAEntities())
             {
-                ViewBag.Calificaciones = dbContext.Calificacion_de_servicio.ToList();
+                var calificaciones = dbContext.Calificacion_de_servicio.Include("Servicio").ToList();
+
+                ViewBag.Calificaciones = calificaciones;
 
                 return View();
             }

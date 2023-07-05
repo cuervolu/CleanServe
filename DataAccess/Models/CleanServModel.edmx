@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-    <Schema Namespace="SERVICIO_LIMPIEZAModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="SERVICIO_LIMPIEZAModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Calificacion_de_servicio">
           <Key>
             <PropertyRef Name="ID_calificacion" />
@@ -368,7 +368,8 @@
             <End Role="Solicitud" EntitySet="Solicitud" />
           </AssociationSet>
         </EntityContainer>
-      </Schema></edmx:StorageModels>
+      </Schema>
+    </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="SERVICIO_LIMPIEZAModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -527,6 +528,15 @@
           <Property Name="contacto_de_emergencia" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="disponible" Type="Boolean" Nullable="false" />
           <NavigationProperty Name="Servicio" Relationship="Self.FK_Servicio_Trabajador" FromRole="Trabajador" ToRole="Servicio" />
+        </EntityType>
+        <EntityType Name="Usuario">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="username" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="pass" Type="String" MaxLength="32" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="activo" Type="Boolean" Nullable="false" />
         </EntityType>
         <Association Name="FK_Calificacion_Servicio">
           <End Role="Servicio" Type="Self.Servicio" Multiplicity="1" />
@@ -698,6 +708,7 @@
           <EntitySet Name="Servicio" EntityType="Self.Servicio" />
           <EntitySet Name="Solicitud" EntityType="Self.Solicitud" />
           <EntitySet Name="Trabajador" EntityType="Self.Trabajador" />
+          <EntitySet Name="Usuario" EntityType="Self.Usuario" />
           <AssociationSet Name="FK_Calificacion_Servicio" Association="Self.FK_Calificacion_Servicio">
             <End Role="Servicio" EntitySet="Servicio" />
             <End Role="Calificacion_de_servicio" EntitySet="Calificacion_de_servicio" />
@@ -750,17 +761,7 @@
             <End Role="Trabajador" EntitySet="Trabajador" />
             <End Role="Servicio" EntitySet="Servicio" />
           </AssociationSet>
-          <EntitySet Name="Usuario" EntityType="SERVICIO_LIMPIEZAModel.Usuario" />
         </EntityContainer>
-        <EntityType Name="Usuario">
-          <Key>
-            <PropertyRef Name="id" />
-          </Key>
-          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="username" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
-          <Property Name="pass" Type="String" Nullable="false" MaxLength="32" FixedLength="false" Unicode="false" />
-          <Property Name="activo" Type="Boolean" Nullable="false" />
-        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -913,10 +914,10 @@
           <EntitySetMapping Name="Usuario">
             <EntityTypeMapping TypeName="SERVICIO_LIMPIEZAModel.Usuario">
               <MappingFragment StoreEntitySet="Usuario">
-                <ScalarProperty Name="activo" ColumnName="activo" />
-                <ScalarProperty Name="pass" ColumnName="pass" />
-                <ScalarProperty Name="username" ColumnName="username" />
                 <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="username" ColumnName="username" />
+                <ScalarProperty Name="pass" ColumnName="pass" />
+                <ScalarProperty Name="activo" ColumnName="activo" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

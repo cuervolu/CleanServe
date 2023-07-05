@@ -82,6 +82,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\InicioController.cs" />
+    <Compile Include="Controllers\ServiciosController.cs" />
     <Compile Include="Utils\ChartData.cs" />
     <Compile Include="View\ClientesForms.cs">
       <SubType>Form</SubType>
@@ -137,6 +138,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="View\ServiciosForm.resx">
+      <DependentUpon>ServiciosForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -12,6 +12,7 @@
                 <th>Nivel de calificación</th>
                 <th>Comentario</th>
                 <th>ID servicio</th>
+                <th>Fecha de servicio</th>
             </tr>
         </thead>
         <tbody>
@@ -34,6 +35,7 @@
                         <td>@item.comentario</td>
                     }
                     <td>@item.ID_servicio</td>
+                    <td>@item.Servicio.fecha_del_servicio.ToString("dd/MM/yyyy")</td>
                 </tr>
             }
         </tbody>

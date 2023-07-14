@@ -39,8 +39,10 @@ namespace app_CleanServ.View
                     LoginForm loginForm = new LoginForm();
                     loginForm.ShowDialog();
                 };
-                mainForm.Show();
 
+                this.Hide();
+                mainForm.ShowDialog();
+                this.Close();
             }
 
             else

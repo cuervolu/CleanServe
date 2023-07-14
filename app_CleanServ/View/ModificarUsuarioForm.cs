@@ -11,11 +11,14 @@ namespace app_CleanServ.View
     {
         private readonly UsuariosController usuariosController;
         private Usuario usuario;
+        private bool passwordChanged;
+
         public ModificarUsuarioForm(Usuario usuario)
         {
             InitializeComponent();
             usuariosController = new UsuariosController();
             this.usuario = usuario;
+            passwordChanged = false;
 
             // Suscribirse a los eventos TextChanged para realizar validaciones en tiempo real
             txtUser.TextChanged += OnTextChanged;
@@ -26,14 +29,14 @@ namespace app_CleanServ.View
             ValidateFields();
         }
 
-        private void ModificarUsuarioForm_Load(object sender, System.EventArgs e)
+        private void ModificarUsuarioForm_Load(object sender, EventArgs e)
         {
-            //Cargar los datos en los textbox
+            // Cargar los datos en los textbox
             txtUser.Text = usuario.username;
             chxActivo.Checked = usuario.activo;
         }
 
-        private void btnGuardar_Click(object sender, System.EventArgs e)
+        private void btnGuardar_Click(object sender, EventArgs e)
         {
             // Mostrar un mensaje de confirmación utilizando MetroFramework
             DialogResult result = MetroMessageBox.Show(this, "¿Desea guardar los cambios?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -43,7 +46,10 @@ namespace app_CleanServ.View
                 try
                 {
                     usuario.username = txtUser.Text;
-                    usuario.pass = txtPass.Text;
+                    if (passwordChanged)
+                    {
+                        usuario.pass = txtPass.Text;
+                    }
                     usuario.activo = chxActivo.Checked;
 
                     // Llamar al método updateUsuario del controlador para guardar los cambios
@@ -52,7 +58,7 @@ namespace app_CleanServ.View
                     if (resultado)
                     {
                         // Mostrar un mensaje de éxito al usuario
-                        MetroMessageBox.Show(this, "El servicio se ha actualizado correctamente.", "Actualización exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MetroMessageBox.Show(this, "El usuario se ha actualizado correctamente.", "Actualización exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         // Cerrar el formulario de modificación
                         this.Close();
                     }
@@ -66,7 +72,6 @@ namespace app_CleanServ.View
                 {
                     // Mostrar un mensaje de error al usuario
                     ShowErrorMessage("Error al actualizar el usuario: " + ex.Message);
-
                 }
             }
         }
@@ -83,7 +88,7 @@ namespace app_CleanServ.View
                 errorProvider.SetError(txtUser, string.Empty);
             }
 
-            if (txtPass.Text != txtConfirmPass.Text)
+            if (passwordChanged && txtPass.Text != txtConfirmPass.Text)
             {
                 errorProvider.SetError(txtConfirmPass, "Las contraseñas deben coincidir.");
             }
@@ -108,7 +113,6 @@ namespace app_CleanServ.View
                                  errorProvider.GetError(txtPass) == string.Empty;
         }
 
-
         private void ShowErrorMessage(string message)
         {
             MetroMessageBox.Show(this, message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -116,6 +120,12 @@ namespace app_CleanServ.View
 
         private void OnTextChanged(object sender, EventArgs e)
         {
+            // Verificar si se ha cambiado la contraseña
+            if (sender == txtPass || sender == txtConfirmPass)
+            {
+                passwordChanged = true;
+            }
+
             ValidateFields();
         }
     }

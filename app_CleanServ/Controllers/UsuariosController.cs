@@ -22,6 +22,19 @@ namespace app_CleanServ.Controllers
             return encryptedPassword;
         }
 
+        public bool confirmPassword(string password, string oldPassword)
+        {
+            try
+            {
+                bool confirm = encryption.VerifyPassword(password, oldPassword);
+                return confirm;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"No se pudo verificar la contraseña: {ex.Message}");
+            }
+        }
+
         public bool createUser(string user, string password)
         {
             try
@@ -91,6 +104,94 @@ namespace app_CleanServ.Controllers
             catch (Exception ex)
             {
                 throw new Exception("Error al cargar usuarios: " + ex.Message);
+            }
+        }
+
+        public Usuario getUsuario(int id_usuario)
+        {
+            try
+            {
+                using (var dbContext = new SERVICIO_LIMPIEZAEntities())
+                {
+                    // Buscar el usuario por su ID
+                    var usuario = dbContext.Usuario.FirstOrDefault(u => u.id == id_usuario);
+
+                    return usuario;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al obtener el usuario: " + ex.Message);
+            }
+        }
+
+        public bool UpdateActivo(int id, bool activo)
+        {
+            try
+            {
+                using (var dbContext = new SERVICIO_LIMPIEZAEntities())
+                {
+                    Usuario usuario = getUsuario(id);
+                    usuario.activo = activo;
+                    dbContext.SaveChanges();
+                    Console.WriteLine("Modificado");
+                    return true;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"No se pudo actualizar el estado del usuario: {ex.Message}");
+            }
+        }
+
+        public bool updateUsuario(Usuario usuario)
+        {
+            try
+            {
+                using (var dbContext = new SERVICIO_LIMPIEZAEntities())
+                {
+                    Usuario oldUsuario = dbContext.Usuario.FirstOrDefault(u => u.id == usuario.id);
+
+                    if (oldUsuario != null)
+                    {
+                        string encryptedPassword = encrypt(usuario.pass);
+                        oldUsuario.username = usuario.username;
+                        oldUsuario.pass = encryptedPassword;
+                        oldUsuario.activo = usuario.activo;
+
+                        int rowsAffected = dbContext.SaveChanges();
+                        return rowsAffected > 0;
+                    }
+                    return false;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al actualizar el servicio: " + ex.Message);
+            }
+        }
+
+        public void removeUsuario(int id)
+        {
+            try
+            {
+                using (var dbContext = new SERVICIO_LIMPIEZAEntities())
+                {
+                    // Buscar el servicio por su ID
+                    Usuario usuario = dbContext.Usuario.FirstOrDefault(u => u.id == id);
+
+                    if (usuario != null)
+                    {
+
+                        // Eliminar el usuario
+                        dbContext.Usuario.Remove(usuario);
+                        dbContext.SaveChanges();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al eliminar el servicio: " + ex.Message);
             }
         }
     }

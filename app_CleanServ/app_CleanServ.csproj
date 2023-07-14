@@ -130,6 +130,12 @@
     <Compile Include="View\ModificarServicioForm.Designer.cs">
       <DependentUpon>ModificarServicioForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\ModificarUsuarioForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ModificarUsuarioForm.Designer.cs">
+      <DependentUpon>ModificarUsuarioForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\ProductosForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -170,6 +176,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\ModificarServicioForm.resx">
       <DependentUpon>ModificarServicioForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ModificarUsuarioForm.resx">
+      <DependentUpon>ModificarUsuarioForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\ProductosForm.resx">
       <DependentUpon>ProductosForm.cs</DependentUpon>

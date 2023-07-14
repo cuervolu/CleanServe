@@ -69,11 +69,11 @@
             // 
             this.txtID.BackColor = System.Drawing.Color.White;
             this.txtID.Enabled = false;
-            this.txtID.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtID.Location = new System.Drawing.Point(177, 3);
+            this.txtID.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtID.Location = new System.Drawing.Point(176, 3);
             this.txtID.Name = "txtID";
             this.txtID.ReadOnly = true;
-            this.txtID.Size = new System.Drawing.Size(100, 21);
+            this.txtID.Size = new System.Drawing.Size(100, 20);
             this.txtID.TabIndex = 1;
             // 
             // tableLayoutPanel1
@@ -81,7 +81,7 @@
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 31.11111F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 68.88889F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 99F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 109F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
@@ -140,8 +140,8 @@
             // txtPrecioServicio
             // 
             this.txtPrecioServicio.DecimalPlaces = 2;
-            this.txtPrecioServicio.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrecioServicio.Location = new System.Drawing.Point(177, 385);
+            this.txtPrecioServicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPrecioServicio.Location = new System.Drawing.Point(176, 385);
             this.txtPrecioServicio.Maximum = new decimal(new int[] {
             -727379969,
             232,
@@ -153,7 +153,7 @@
             0,
             0});
             this.txtPrecioServicio.Name = "txtPrecioServicio";
-            this.txtPrecioServicio.Size = new System.Drawing.Size(120, 21);
+            this.txtPrecioServicio.Size = new System.Drawing.Size(120, 20);
             this.txtPrecioServicio.TabIndex = 16;
             this.txtPrecioServicio.ThousandsSeparator = true;
             this.txtPrecioServicio.Value = new decimal(new int[] {
@@ -174,8 +174,8 @@
             // 
             // txtPagoTrabajador
             // 
-            this.txtPagoTrabajador.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPagoTrabajador.Location = new System.Drawing.Point(177, 336);
+            this.txtPagoTrabajador.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPagoTrabajador.Location = new System.Drawing.Point(176, 336);
             this.txtPagoTrabajador.Maximum = new decimal(new int[] {
             -727379969,
             232,
@@ -187,7 +187,7 @@
             0,
             0});
             this.txtPagoTrabajador.Name = "txtPagoTrabajador";
-            this.txtPagoTrabajador.Size = new System.Drawing.Size(120, 21);
+            this.txtPagoTrabajador.Size = new System.Drawing.Size(120, 20);
             this.txtPagoTrabajador.TabIndex = 14;
             this.txtPagoTrabajador.Value = new decimal(new int[] {
             1,
@@ -208,8 +208,8 @@
             // txtComision
             // 
             this.txtComision.DecimalPlaces = 2;
-            this.txtComision.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtComision.Location = new System.Drawing.Point(177, 277);
+            this.txtComision.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtComision.Location = new System.Drawing.Point(176, 277);
             this.txtComision.Maximum = new decimal(new int[] {
             -727379969,
             232,
@@ -221,7 +221,7 @@
             0,
             0});
             this.txtComision.Name = "txtComision";
-            this.txtComision.Size = new System.Drawing.Size(120, 21);
+            this.txtComision.Size = new System.Drawing.Size(120, 20);
             this.txtComision.TabIndex = 12;
             this.txtComision.Value = new decimal(new int[] {
             1,
@@ -281,8 +281,8 @@
             // 
             // txtNumeroHoras
             // 
-            this.txtNumeroHoras.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNumeroHoras.Location = new System.Drawing.Point(177, 129);
+            this.txtNumeroHoras.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNumeroHoras.Location = new System.Drawing.Point(176, 129);
             this.txtNumeroHoras.Maximum = new decimal(new int[] {
             -727379969,
             232,
@@ -294,7 +294,7 @@
             0,
             0});
             this.txtNumeroHoras.Name = "txtNumeroHoras";
-            this.txtNumeroHoras.Size = new System.Drawing.Size(120, 21);
+            this.txtNumeroHoras.Size = new System.Drawing.Size(120, 20);
             this.txtNumeroHoras.TabIndex = 5;
             this.txtNumeroHoras.Value = new decimal(new int[] {
             1,
@@ -304,9 +304,9 @@
             // 
             // txtFechaServicio
             // 
-            this.txtFechaServicio.CalendarFont = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFechaServicio.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFechaServicio.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.txtFechaServicio.Location = new System.Drawing.Point(177, 66);
+            this.txtFechaServicio.Location = new System.Drawing.Point(176, 66);
             this.txtFechaServicio.MinDate = new System.DateTime(1778, 7, 5, 0, 0, 0, 0);
             this.txtFechaServicio.MinimumSize = new System.Drawing.Size(0, 29);
             this.txtFechaServicio.Name = "txtFechaServicio";
@@ -319,7 +319,7 @@
             this.cbxTrabajador.ForeColor = System.Drawing.SystemColors.InfoText;
             this.cbxTrabajador.FormattingEnabled = true;
             this.cbxTrabajador.ItemHeight = 23;
-            this.cbxTrabajador.Location = new System.Drawing.Point(177, 426);
+            this.cbxTrabajador.Location = new System.Drawing.Point(176, 426);
             this.cbxTrabajador.Name = "cbxTrabajador";
             this.cbxTrabajador.Size = new System.Drawing.Size(200, 29);
             this.cbxTrabajador.TabIndex = 18;
@@ -329,7 +329,7 @@
             // 
             this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(69)))), ((int)(((byte)(113)))));
             this.btnGuardar.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.btnGuardar.Location = new System.Drawing.Point(562, 426);
+            this.btnGuardar.Location = new System.Drawing.Point(561, 426);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(94, 28);
             this.btnGuardar.Style = MetroFramework.MetroColorStyle.White;
@@ -343,22 +343,22 @@
             // 
             // txtHoraDeInicio
             // 
-            this.txtHoraDeInicio.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHoraDeInicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHoraDeInicio.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.txtHoraDeInicio.Location = new System.Drawing.Point(177, 165);
+            this.txtHoraDeInicio.Location = new System.Drawing.Point(176, 165);
             this.txtHoraDeInicio.Name = "txtHoraDeInicio";
             this.txtHoraDeInicio.ShowUpDown = true;
-            this.txtHoraDeInicio.Size = new System.Drawing.Size(219, 21);
+            this.txtHoraDeInicio.Size = new System.Drawing.Size(219, 20);
             this.txtHoraDeInicio.TabIndex = 20;
             // 
             // txtHoraFin
             // 
-            this.txtHoraFin.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHoraFin.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHoraFin.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.txtHoraFin.Location = new System.Drawing.Point(177, 217);
+            this.txtHoraFin.Location = new System.Drawing.Point(176, 217);
             this.txtHoraFin.Name = "txtHoraFin";
             this.txtHoraFin.ShowUpDown = true;
-            this.txtHoraFin.Size = new System.Drawing.Size(219, 21);
+            this.txtHoraFin.Size = new System.Drawing.Size(219, 20);
             this.txtHoraFin.TabIndex = 21;
             // 
             // ModificarServicioForm
@@ -369,7 +369,6 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "ModificarServicioForm";
             this.Resizable = false;
-            this.Style = MetroFramework.MetroColorStyle.Teal;
             this.Text = "Modificar Servicio";
             this.Load += new System.EventHandler(this.ModificarServicioForm_Load_1);
             this.tableLayoutPanel1.ResumeLayout(false);

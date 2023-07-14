@@ -28,3 +28,35 @@ D:\Duoc\Asignaturas\Quinto Semestre\Programación en C# I\Examen\web_CleanServe\
 D:\Duoc\Asignaturas\Quinto Semestre\Programación en C# I\Examen\web_CleanServe\app_CleanServ\obj\Debug\app_CleanServ.View.UsuarioForm.resources
 D:\Duoc\Asignaturas\Quinto Semestre\Programación en C# I\Examen\web_CleanServe\app_CleanServ\bin\Debug\PasswordEncryptor.dll
 D:\Duoc\Asignaturas\Quinto Semestre\Programación en C# I\Examen\web_CleanServe\app_CleanServ\bin\Debug\PasswordEncryptor.pdb
+D:\Descargas\web_CleanServe2\web_CleanServe\app_CleanServ\bin\Debug\app_CleanServ.exe.config
+D:\Descargas\web_CleanServe2\web_CleanServe\app_CleanServ\bin\Debug\app_CleanServ.exe
+D:\Descargas\web_CleanServe2\web_CleanServe\app_CleanServ\bin\Debug\app_CleanServ.pdb
+D:\Descargas\web_CleanServe2\web_CleanServe\app_CleanServ\bin\Debug\DataAccess.dll
+D:\Descargas\web_CleanServe2\web_CleanServe\app_CleanServ\bin\Debug\EntityFramework.dll
+D:\Descargas\web_CleanServe2\web_CleanServe\app_CleanServ\bin\Debug\EntityFramework.SqlServer.dll
+D:\Descargas\web_CleanServe2\web_CleanServe\app_CleanServ\bin\Debug\MetroFramework.Design.dll
+D:\Descargas\web_CleanServe2\web_CleanServe\app_CleanServ\bin\Debug\MetroFramework.dll
+D:\Descargas\web_CleanServe2\web_CleanServe\app_CleanServ\bin\Debug\MetroFramework.Fonts.dll
+D:\Descargas\web_CleanServe2\web_CleanServe\app_CleanServ\bin\Debug\PasswordEncryptor.dll
+D:\Descargas\web_CleanServe2\web_CleanServe\app_CleanServ\bin\Debug\DataAccess.pdb
+D:\Descargas\web_CleanServe2\web_CleanServe\app_CleanServ\bin\Debug\DataAccess.dll.config
+D:\Descargas\web_CleanServe2\web_CleanServe\app_CleanServ\bin\Debug\PasswordEncryptor.pdb
+D:\Descargas\web_CleanServe2\web_CleanServe\app_CleanServ\bin\Debug\EntityFramework.xml
+D:\Descargas\web_CleanServe2\web_CleanServe\app_CleanServ\bin\Debug\EntityFramework.SqlServer.xml
+D:\Descargas\web_CleanServe2\web_CleanServe\app_CleanServ\obj\Debug\app_CleanServ.csproj.AssemblyReference.cache
+D:\Descargas\web_CleanServe2\web_CleanServe\app_CleanServ\obj\Debug\app_CleanServ.csproj.SuggestedBindingRedirects.cache
+D:\Descargas\web_CleanServe2\web_CleanServe\app_CleanServ\obj\Debug\app_CleanServ.View.CrearUsuarioForm.resources
+D:\Descargas\web_CleanServe2\web_CleanServe\app_CleanServ\obj\Debug\app_CleanServ.View.InicioForm.resources
+D:\Descargas\web_CleanServe2\web_CleanServe\app_CleanServ\obj\Debug\app_CleanServ.View.LoginForm.resources
+D:\Descargas\web_CleanServe2\web_CleanServe\app_CleanServ\obj\Debug\app_CleanServ.MainForm.resources
+D:\Descargas\web_CleanServe2\web_CleanServe\app_CleanServ\obj\Debug\app_CleanServ.Properties.Resources.resources
+D:\Descargas\web_CleanServe2\web_CleanServe\app_CleanServ\obj\Debug\app_CleanServ.View.ModificarServicioForm.resources
+D:\Descargas\web_CleanServe2\web_CleanServe\app_CleanServ\obj\Debug\app_CleanServ.View.ServiciosForm.resources
+D:\Descargas\web_CleanServe2\web_CleanServe\app_CleanServ\obj\Debug\app_CleanServ.View.UsuarioForm.resources
+D:\Descargas\web_CleanServe2\web_CleanServe\app_CleanServ\obj\Debug\app_CleanServ.csproj.GenerateResource.cache
+D:\Descargas\web_CleanServe2\web_CleanServe\app_CleanServ\obj\Debug\app_CleanServ.csproj.CoreCompileInputs.cache
+D:\Descargas\web_CleanServe2\web_CleanServe\app_CleanServ\obj\Debug\app_CleanServ.csproj.CopyComplete
+D:\Descargas\web_CleanServe2\web_CleanServe\app_CleanServ\obj\Debug\app_CleanServ.exe
+D:\Descargas\web_CleanServe2\web_CleanServe\app_CleanServ\obj\Debug\app_CleanServ.pdb
+D:\Descargas\web_CleanServe2\web_CleanServe\app_CleanServ\obj\Debug\app_CleanServ.View.ProductosForm.resources
+D:\Descargas\web_CleanServe2\web_CleanServe\app_CleanServ\obj\Debug\app_CleanServ.View.ClientesForms.resources

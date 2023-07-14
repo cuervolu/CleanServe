@@ -66,5 +66,10 @@ namespace app_CleanServ.View
                 MetroFramework.MetroMessageBox.Show(this, "No hay datos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void chartSales_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

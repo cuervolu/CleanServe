@@ -28,24 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             this.txtUsuario = new MetroFramework.Controls.MetroTextBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.txtPass = new MetroFramework.Controls.MetroTextBox();
             this.btnLogin = new MetroFramework.Controls.MetroButton();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::app_CleanServ.Properties.Resources.logo_black;
-            this.pictureBox1.Location = new System.Drawing.Point(23, 82);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(518, 238);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // txtUsuario
             // 
@@ -64,7 +55,7 @@
             this.txtUsuario.CustomButton.Visible = false;
             this.txtUsuario.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txtUsuario.Lines = new string[0];
-            this.txtUsuario.Location = new System.Drawing.Point(164, 14);
+            this.txtUsuario.Location = new System.Drawing.Point(130, 14);
             this.txtUsuario.MaxLength = 10;
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.PasswordChar = '\0';
@@ -80,7 +71,7 @@
             this.txtUsuario.UseSelectable = true;
             this.txtUsuario.WaterMark = "Usuario";
             this.txtUsuario.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtUsuario.WaterMarkFont = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsuario.WaterMarkFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // tableLayoutPanel1
             // 
@@ -90,13 +81,13 @@
             this.tableLayoutPanel1.Controls.Add(this.txtUsuario, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.txtPass, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.btnLogin, 0, 2);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(23, 316);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(54, 316);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.21276F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 49.78724F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 90F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(518, 192);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(450, 192);
             this.tableLayoutPanel1.TabIndex = 2;
             // 
             // txtPass
@@ -116,7 +107,7 @@
             this.txtPass.CustomButton.Visible = false;
             this.txtPass.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txtPass.Lines = new string[0];
-            this.txtPass.Location = new System.Drawing.Point(164, 64);
+            this.txtPass.Location = new System.Drawing.Point(130, 64);
             this.txtPass.MaxLength = 10;
             this.txtPass.Name = "txtPass";
             this.txtPass.PasswordChar = '*';
@@ -132,7 +123,7 @@
             this.txtPass.UseSelectable = true;
             this.txtPass.WaterMark = "Contraseña";
             this.txtPass.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtPass.WaterMarkFont = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPass.WaterMarkFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // btnLogin
             // 
@@ -140,7 +131,7 @@
             this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(69)))), ((int)(((byte)(113)))));
             this.btnLogin.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.btnLogin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnLogin.Location = new System.Drawing.Point(201, 126);
+            this.btnLogin.Location = new System.Drawing.Point(167, 126);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(115, 41);
             this.btnLogin.Style = MetroFramework.MetroColorStyle.White;
@@ -151,27 +142,36 @@
             this.btnLogin.UseSelectable = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(54, 111);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(450, 91);
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(564, 576);
-            this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "LoginForm";
             this.Text = "Iniciar Sesión";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pictureBox1;
         private MetroFramework.Controls.MetroTextBox txtUsuario;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private MetroFramework.Controls.MetroTextBox txtPass;
         private MetroFramework.Controls.MetroButton btnLogin;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

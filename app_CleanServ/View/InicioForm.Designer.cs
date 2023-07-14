@@ -48,6 +48,9 @@
             this.chartSales.Legends.Add(legend1);
             this.chartSales.Location = new System.Drawing.Point(0, 141);
             this.chartSales.Name = "chartSales";
+            this.chartSales.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
+            this.chartSales.PaletteCustomColors = new System.Drawing.Color[] {
+        System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(69)))), ((int)(((byte)(113)))))};
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
             series1.Name = "Series1";
@@ -55,6 +58,7 @@
             this.chartSales.Size = new System.Drawing.Size(776, 381);
             this.chartSales.TabIndex = 0;
             this.chartSales.Text = "chartSales";
+            this.chartSales.Click += new System.EventHandler(this.chartSales_Click);
             // 
             // InicioForm
             // 

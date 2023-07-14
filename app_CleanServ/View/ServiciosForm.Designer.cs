@@ -74,7 +74,7 @@
             this.Controls.Add(this.metroProgressSpinner1);
             this.Controls.Add(this.dgvServicios);
             this.Controls.Add(this.lblServicios);
-            this.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ServiciosForm";
             this.Text = "ServiciosForm";

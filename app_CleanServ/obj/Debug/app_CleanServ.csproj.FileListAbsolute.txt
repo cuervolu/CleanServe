@@ -60,6 +60,10 @@ D:\Descargas\web_CleanServe2\web_CleanServe\app_CleanServ\obj\Debug\app_CleanSer
 D:\Descargas\web_CleanServe2\web_CleanServe\app_CleanServ\obj\Debug\app_CleanServ.pdb
 D:\Descargas\web_CleanServe2\web_CleanServe\app_CleanServ\obj\Debug\app_CleanServ.View.ProductosForm.resources
 D:\Descargas\web_CleanServe2\web_CleanServe\app_CleanServ\obj\Debug\app_CleanServ.View.ClientesForms.resources
+<<<<<<< HEAD
 D:\Duoc\Asignaturas\Quinto Semestre\Programación en C# I\Examen\web_CleanServe\app_CleanServ\obj\Debug\app_CleanServ.View.ClientesForms.resources
 D:\Duoc\Asignaturas\Quinto Semestre\Programación en C# I\Examen\web_CleanServe\app_CleanServ\obj\Debug\app_CleanServ.View.ProductosForm.resources
 D:\Duoc\Asignaturas\Quinto Semestre\Programación en C# I\Examen\web_CleanServe\app_CleanServ\obj\Debug\app_CleanServ.View.ModificarUsuarioForm.resources
+=======
+D:\Descargas\web_CleanServe2\web_CleanServe\app_CleanServ\obj\Debug\app_CleanServ.View.ModificarClienteForm.resources
+>>>>>>> 215c53d1239e637bb3d64ab9eb66996c8969a996

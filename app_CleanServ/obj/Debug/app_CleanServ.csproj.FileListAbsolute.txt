@@ -60,3 +60,4 @@ D:\Descargas\web_CleanServe2\web_CleanServe\app_CleanServ\obj\Debug\app_CleanSer
 D:\Descargas\web_CleanServe2\web_CleanServe\app_CleanServ\obj\Debug\app_CleanServ.pdb
 D:\Descargas\web_CleanServe2\web_CleanServe\app_CleanServ\obj\Debug\app_CleanServ.View.ProductosForm.resources
 D:\Descargas\web_CleanServe2\web_CleanServe\app_CleanServ\obj\Debug\app_CleanServ.View.ClientesForms.resources
+D:\Descargas\web_CleanServe2\web_CleanServe\app_CleanServ\obj\Debug\app_CleanServ.View.ModificarClienteForm.resources

@@ -35,9 +35,11 @@ namespace app_CleanServ.View
                 MainForm mainForm = new MainForm();
                 mainForm.FormClosed += (s, args) =>
                 {
+                    mainForm.Hide();
                     // Mostrar el formulario de inicio de sesión nuevamente
                     LoginForm loginForm = new LoginForm();
                     loginForm.ShowDialog();
+                    mainForm.Close();
                 };
 
                 this.Hide();
